@@ -84,16 +84,58 @@ body {
 }
 
 .hero-cta {
-    background: white;
-    height: 40px;
-    width: 40px;
+    background: #ff0000;
+    height: 55px;
+    width: 55px;
     position: absolute;
     bottom: 0;
     border: 1px solid black;
     border-radius: 100px;
     left: 50%;
     transform: translate(-50%, 50%);
+    background-image: url("../Images/Icon Arrow Down.svg");
+    background-size: 21px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.share-a-car {
+    background-color: #FF0000;
+    height: 66px;
+    width: 220px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 3px 6px #FF00004D;
+    opacity: 99%;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.key-features {
+    color: #FF0000;
+    height: 66px;
+    width: 220px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 3px 6px #FF00004D;
+    opacity: 99%;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.hero-content .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+}
+
+
 
 .hero-title {
     text-transform: uppercase;
@@ -109,9 +151,14 @@ body {
     font-weight: bold;
 }
 
+
 /*BLOG CONTENT*/
+
+
 .blog {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .blog_main_title {
@@ -120,6 +167,23 @@ body {
     font-size: 35px;
     height: 47px;
     width: 95px;
+}
+
+.blog_main_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.blog_main_title::before,
+.blog_main_title::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: #222;
+    flex-grow: 1;
 }
 
 .blog_article {
@@ -135,12 +199,28 @@ body {
 }
 
 
+/*SERVICE */
+.service .container {
+    height: 643px;
+    background-color: #28272C;
+}
+.service_title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    height: 47px;
+    width: 95px;
+}
+
 /*CONTACT*/
 
-/*.contact  {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
+.contact  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .contact_title {
     text-transform: uppercase;
@@ -169,14 +249,72 @@ form img{
 
 footer {
     background-color: #28272C;
+    height: 232px;
+    color: white;
+    font-size: 25px;
 }
 
 .footer-logo {
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
+.home-span {
+    color: #FF0000;
+}
+.page-footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 .page-footer-nav {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.page-footer-nav-link {
+    padding: 5px;
+    text-decoration-line: none;
+}
+
+.page-footer-nav-link a {
+    color: white;
+}
+
+.page-footer-nav-list {
+    height: 97px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1px;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.page-footer-nav-list a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.page-footer-nav-link:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.footer-logo span {
+    color: #FF0000;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+    font-weight: bold;
 }
 
 
