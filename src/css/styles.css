@@ -17,15 +17,16 @@ body {
     width: 1088px;
 }
 
-.hero {
-    position: relative;
-}
+/*.hero {*/
+/*    position: relative;*/
+/*}*/
 
 .page-header {
     background: rgba(0,0,0,0.3);
     position: absolute;
     width: 100%;
     color: white;
+    z-index: 1;
 }
 
 .page-header .container {
@@ -43,6 +44,7 @@ body {
     font-size: 35px;
     gap: 10px;
     font-weight: bold;
+
 }
 
 .page-nav-list {
@@ -81,7 +83,18 @@ body {
     align-items: center;
     height: 123px;
     flex-direction: column;
+    position: relative;
 }
+.hero-content::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
 
 .hero-content .container {
     display: flex;
@@ -165,12 +178,14 @@ body {
     width: 643px;
     height: 123px;
     font-weight: bold;
+    z-index: 1;
 }
 
 .hero-text {
     color: white;
     font-weight: bold;
     font-size: 16px;
+    z-index: 1;
 }
 
 
